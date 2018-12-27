@@ -1,0 +1,99 @@
+.service {
+	background: #fff;
+	padding: 64px 0;
+}
+
+.service-grid {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.service-grid h3 {
+	color: #333333;
+	font-family: 'montserratmedium';
+	font-size: 1.428em;
+	margin: 50px 0;
+}
+
+.service-grid p {
+	font-family: 'loraregular';
+	font-size:1.142em;
+	margin: 0;
+	color: #808080;
+}
+
+.creative {
+	background: url('../img/monitor.png') no-repeat center center;
+	width: 106px;
+	height: 106px;
+	margin: 0 auto;
+	border: 1px solid #bbbbbb;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.skills {
+	background: url('../img/pencil.png') no-repeat center center;
+	width: 108px;
+	height: 108px;
+	margin: 0 auto;
+	border: 1px solid #bbbbbb;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.help {
+	background: url('../img/tag.png') no-repeat center center;
+	width: 108px;
+	height: 108px;
+	margin: 0 auto;
+	border: 1px solid #bbbbbb;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.service-left .creative:hover {
+	background: url('../img/monitor-white.png') no-repeat center center;
+	background-color: #fa694e;
+	border: none;
+}
+
+.service-middle .skills:hover {
+	background: url('../img/pencil-white.png') no-repeat center center;
+	background-color: #fa694e;
+	border: none;
+}
+
+.service-right .help:hover {
+	background: url('../img/tag-white.png') no-repeat center center;
+	background-color: #fa694e;
+	border: none;
+}
+
+
+@media only screen and (max-width: 575.98px) {
+	.service-grid p {
+		max-width: 300px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.service-grid p {
+
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.service-grid p {
+
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.service-grid p {
+		max-width: 300px;
+		display: block;
+		margin: 0 auto;
+	}
+}

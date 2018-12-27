@@ -1,0 +1,323 @@
+.clrf {
+	content: '';
+	display: block;
+	clear: both;
+}	
+
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/header/bckg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#logo {
+	display: inline-block;
+	position: absolute;
+	z-index: 10;
+	float: left;
+	margin-top: 20px;
+}
+
+header .title-section {
+	text-align: center;
+}
+
+header h1 {
+	font-family: 'montserratregular';
+	font-size: 4.6875em;
+	color: #fff;
+	margin-top: 150px;
+	padding-bottom: 80px;
+	text-shadow:1px 1px 10px #000;
+}
+
+header p {
+	font-family: 'montserratregular';
+	font-size: 1.4em;
+	color: #fff;
+	line-height: 35px;
+	max-width: 555px;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+header .headr-btn {
+	border-radius: 4px;
+	background-color: #fa694e;
+	display: inline-block;
+	transition: 0.3s;
+	
+}
+
+header div.headr-btn a {
+	font-family: 'montserratregular';
+	font-size: 1.4em;
+	color: #fff;
+	text-decoration: none !important;
+	outline: none;
+	display: inline-block;
+	padding: 20px 76px 25px 79px;
+
+}
+
+header .headr-btn:hover {
+	background-color: #D24B30; 
+}
+
+/* Canvas Button */
+
+div.canvas-btn {
+	width: 38px;
+	height: 26px;
+	float: right;
+	position: relative;
+	top: 33px;
+	z-index: 100;
+}
+div.canvas-btn > div:before {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	top: 12px;
+}
+div.canvas-btn > div {
+	width: 100%;
+	height: 2px;
+	background: #fff;
+}
+div.canvas-btn > div:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0;
+}
+
+/* Nav Menu */
+
+nav.main-nav {
+	position: absolute;
+	z-index: 1000;
+    width: 500px;
+    height: 100%;
+    background-color: #333;
+    right: -100%;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s; 
+}
+
+nav.main-nav.open {
+	right: 0;
+}
+
+nav #nav-logo {
+	margin-top: 60px;
+	margin-bottom: 36px;
+}
+
+nav h2 {
+	text-transform: uppercase;
+	font-family: 'montserratregular';
+	font-size: 2.181em;
+	padding-bottom: 86px;
+}
+
+div.menu-container ul {
+	font-family: 'montserratregular';
+	font-size: 0.9375em;
+}
+
+div.menu-container ul li {
+	display: block;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+div.menu-container ul li:last-child {
+	margin-bottom: 80px;
+}
+
+div.social-menu ul li i {
+	display: block;
+	color: #333;
+	padding-top: 10px;
+}
+
+div.social-menu ul li {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	margin-right: 27px;
+	background-color: #fff;
+	border-radius: 100px;
+}
+div.social-menu ul li:last-child {
+	margin-right: 0;
+}
+
+div#close-btn {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	float: right;
+	right: 23px;
+	top: 32px;
+}
+div.close-cross {
+	width: 26px;
+	height: 2px;
+	background-color: #fff;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transition: 0.3s;
+}
+
+div.close-cross:after {
+	content: '';
+	width: 26px;
+	height: 2px;
+	background-color: #fff;
+	float: right;
+	transform: rotate(-90deg);
+}
+
+@media only screen and ( max-width: 1200px ) {
+	header {
+		height: 900px;
+	}
+	header h1 {
+		font-size: 5.5em;
+		margin-top: 320px;
+		padding-bottom: 60px;
+	}
+	nav #nav-logo {
+		margin-top: 150px;
+		margin-bottom: 66px;
+	}
+	#logo {
+		margin-left: 30px;
+	}
+	#canvas-btn {
+		margin-right: 35px;
+	}
+	#main-nav {
+		max-width: 100%;
+		height: 900px;
+	}	
+}
+
+
+@media only screen and ( max-width: 992px ) {
+	header {
+		height: 900px;
+	}
+	header h1 {
+		font-size: 4.5em;
+		margin-top: 420px;
+		padding-bottom: 60px;
+	}
+	#main-nav {
+		max-width: 100%;
+		height: 100%;
+	}
+
+}
+
+@media only screen and ( max-width: 768px ) {
+	header {
+		height: 900px;
+	}
+	header h1 {
+		font-size: 4.5em;
+		margin-top: 420px;
+		padding-bottom: 60px;
+	}
+	#main-nav {
+		max-width: 100%;
+		height: 100%;
+	}
+}
+
+@media only screen and ( max-width: 576px ) {
+	#main-nav {
+		max-width: 100%;
+		height: 100%;
+	}
+	#logo img,
+	#nav-logo img {
+		width: 50px;
+	}
+	nav #nav-logo {
+		margin-top: 90px;
+		margin-bottom: 66px;
+	}
+	#logo {
+		margin-left: 20px;
+	}
+
+	#canvas-btn {
+		margin-right: 20px;
+	}
+
+	header {
+		height: 900px;
+		background-position: right; 
+	}
+
+	header h1 {
+		font-size: 3.5em;
+		margin-top: 320px;
+		padding-bottom: 60px;
+	}
+	
+	header p {
+		max-width: 300px;
+		font-size: 1em;
+	}
+	header div.headr-btn a {
+		font-family: 'montserratregular';
+		font-size: 1.1em;
+		color: #fff;
+		text-decoration: none !important;
+		outline: none;
+		display: inline-block;
+		padding: 10px 46px 15px 49px;
+
+	}
+
+}
+/* iPhone 5 & Galaxy S5*/
+
+@media only screen and ( max-width: 360px ) {
+	header h1 {
+		font-size: 3em;
+		margin-top: 200px;
+	}
+	#logo img,
+	#nav-logo img {
+		width: 50px;
+	}
+	nav #nav-logo {
+		margin-top: 60px;
+		margin-bottom: 36px;
+	}
+	div.menu-container ul li:last-child {
+		margin-bottom: 50px;
+	}
+	nav h2 {
+		padding-bottom: 40px;
+		font-size: 1.8em;
+	}
+}

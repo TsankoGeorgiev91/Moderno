@@ -1,0 +1,7 @@
+body {
+	overflow-x: hidden;
+}
+.container-fluid {
+	width: 1200px;
+	margin: 0 auto;
+}
